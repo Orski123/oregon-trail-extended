@@ -46,7 +46,7 @@ class Wagon {
 
     shouldQuarantine() {
     //  Returns true if there is at least one unhealthy person in the wagon. Return false if not.
-   let unHealthy=
+   const unHealthy=
    this.passengers.some (passengers => this.passengers.isHealthy === true)
    return unHealthy
 }
@@ -107,7 +107,7 @@ giveFood(traveler, numOfFoodUnits) {
  
     if (numOfFoodUnits> 0) {
         traveler = Traveler.food= Hunter.food 
-        
+        return Traveler.food
  }
  
  }   
